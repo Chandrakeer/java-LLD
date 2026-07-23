@@ -5,6 +5,10 @@ import TicTacToe.Strategy.*;
 
 import java.util.*;
 
+/**
+ * Main driver class for the Tic Tac Toe game.
+ * Initializes game and handles user interaction.
+ */
 public class TicTacToeDemo {
     
     public static void main(String[] args){
@@ -42,6 +46,11 @@ public class TicTacToeDemo {
 
             System.out.print("Column : ");
             int col = scanner.nextInt();
+
+            if (row < 0 || row >= 3 || col < 0 || col >= 3) {
+                System.out.println("Invalid input! Please enter values between 0 and 2.");
+                continue;
+            }
 
             boolean success = game.makeMove(row, col);
 

@@ -3,6 +3,9 @@ package TicTacToe.Strategy;
 import TicTacToe.model.Board;
 import TicTacToe.model.Player;
 
+/**
+ * Strategy to check if a player has won by filling an entire column.
+ */
 public class ColumnWinningStrategy implements WinningStrategy {
     
     @Override

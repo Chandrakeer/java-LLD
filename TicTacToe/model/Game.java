@@ -5,6 +5,9 @@ import TicTacToe.Strategy.WinningStrategy;
 import java.util.List;
 
 
+/**
+ * Manages the Tic Tac Toe game logic and game state.
+ */
 public class Game {
     
     private final Board board;

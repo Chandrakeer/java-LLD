@@ -1,5 +1,8 @@
 package TicTacToe.model;
 
+/**
+ * Represents the Tic Tac Toe game board.
+ */
 public class Board {
 
     private final int size;
@@ -22,6 +25,13 @@ public class Board {
         }
     }
 
+    /**
+     * Places a symbol at the specified position.
+     * @param row the row index
+     * @param col the column index
+     * @param symbol the symbol to place
+     * @return true if placement was successful, false if the cell is occupied or out of bounds
+     */
     public boolean placeSymbol(int row, int col, Symbol symbol){
 
         if(!isValidMove(row, col)){
@@ -34,7 +44,7 @@ public class Board {
         return true;
     }
 
-    private boolean isValidMove(int col, int row){
+    private boolean isValidMove(int row, int col){
 
         if ( row < 0 || row >= size || col < 0 || col >= size){
             return false;

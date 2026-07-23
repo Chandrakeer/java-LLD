@@ -3,6 +3,9 @@ package TicTacToe.Strategy;
 import TicTacToe.model.Board;
 import TicTacToe.model.Player;
 
+/**
+ * Strategy to check if a player has won by filling either diagonal.
+ */
 public class DiagonalWinningStrategy implements WinningStrategy {
     
     @Override
